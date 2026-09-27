@@ -2,6 +2,53 @@
 Es una moneda virtual que transfiere a direcciones aleatorias temporales con un nivel de seguridad en blockchain de extremo a extremo.
 
 
+<h2>Crear cuentas</h2>
+
+
+```nodejs
+
+const yengcoin = require('./index.js');
+
+async function main() {
+
+
+  try {
+
+
+   console.log('--- 1. Creación de cuentas privadas ---');
+    const sender = await yengcoin.createAccount();
+    const recipient = await yengcoin.createAccount();
+
+    console.log('Cuenta del Emisor:', sender);
+    console.log('Cuenta del Receptor:', recipient);
+
+
+
+process.exit(0);
+
+} catch (err) {
+
+
+
+
+console.log(err);
+
+process.exit(1);
+}
+
+
+
+
+
+}
+
+
+
+main();
+
+
+
+```
 
 
 <h2>Transferencias</h2>
