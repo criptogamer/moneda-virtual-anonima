@@ -341,3 +341,66 @@ process.exit(1);
 
 
 ```
+
+
+
+
+
+
+
+
+
+<h2>Obtener información por bloque</h2>
+
+
+
+```nodejs
+
+
+
+
+
+const yengcoin = require('./index.js');
+
+async function main() {
+  try {
+
+
+
+
+
+
+
+
+
+
+
+
+
+      console.log('\n--- 5. Consulta de detalles del bloque ---');
+      const blockDetails = await yengcoin.getBlock(txResult.blockId);
+      console.log('Información Pública del Bloque:', blockDetails);
+
+
+
+
+
+} catch (err) {
+
+
+
+
+console.log(err);
+
+
+
+
+
+}
+
+
+
+}
+
+
+```
