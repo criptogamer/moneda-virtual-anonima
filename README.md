@@ -51,6 +51,75 @@ main();
 ```
 
 
+
+
+
+
+<h2>Crear dirección temporal</h2>
+```nodejs
+
+
+
+
+
+
+const yengcoin = require('./index.js');
+
+async function main() {
+  try {
+
+
+
+/****
+****/
+
+
+
+
+
+
+
+ 
+
+
+const privateAddress = "";
+const privateKey = "";
+
+    console.log('\n--- 2. Generación de dirección pública de un solo uso (Válida por 3 minutos) ---');
+    const tempPaymentAddress = await yengcoin.generateTemporaryPublicAddress(
+      privateAddress,
+      privateKey
+    );
+    console.log('Dirección Pública Temporal:', tempPaymentAddress);
+
+
+
+
+process.exit(0);
+} catch (err) {
+
+
+
+
+console.log(err);
+
+
+
+process.exit(1);
+}
+
+
+
+}
+main();
+
+
+```
+
+
+
+
+
 <h2>Transferencias</h2>
 
 ```nodejs
@@ -101,5 +170,18 @@ process.exit(1);
 
 }
 main();
+
+```
+
+
+
+
+
+
+
+
+```nodejs
+
+
 
 ```
