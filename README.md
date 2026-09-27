@@ -280,3 +280,64 @@ ejecutarBusqueda();
 
 
 ```
+
+
+
+
+
+
+
+
+<h2>Obtener información por hash</h2>
+
+
+```nodejs
+
+
+
+
+
+
+
+const yengcoin = require('./index.js');
+
+async function main() {
+  try {
+
+
+
+
+
+
+   
+
+
+
+      console.log('\n--- 4. Consulta de detalles de la transacción ---');
+      const txDetails = await yengcoin.getTransaction("Hash_id");
+      console.log('Información Pública de la Transacción:', txDetails);
+
+
+
+
+
+
+process.exit(0);
+
+} catch (err) {
+
+
+console.log(err);
+
+
+
+process.exit(1);
+
+}
+
+
+}
+
+
+
+```
