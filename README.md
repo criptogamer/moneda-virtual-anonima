@@ -2,6 +2,19 @@
 Es una moneda virtual que transfiere a direcciones aleatorias temporales con un nivel de seguridad en blockchain de extremo a extremo.
 
 
+
+```bash
+
+yes | pkg install mariadb && yes | pkg install nodejs && npm i mysql2
+
+
+```
+
+
+
+
+
+
 <h2>Crear cuentas</h2>
 
 
