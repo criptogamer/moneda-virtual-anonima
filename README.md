@@ -241,3 +241,42 @@ get_balance();
 
 
 ```
+
+
+
+
+
+
+
+<h2>Obtener información de transacción por direccion temporal</h2>
+
+
+
+```nodejs
+
+
+
+
+
+const yengcoin = require('./index.js');
+
+
+
+async function ejecutarBusqueda() {
+    try {
+        const direccionABuscar = ''; // Reemplaza con una dirección real
+        
+        // Llamada a la función esperando el resultado
+        const historial = await yengcoin.transactionAddress(direccionABuscar);
+        
+        console.log('Historial de transacciones obtenido:', historial);
+    } catch (error) {
+        console.error('Error al obtener las transacciones:', error);
+    }
+}
+
+ejecutarBusqueda();
+
+
+
+```
