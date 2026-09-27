@@ -14,13 +14,6 @@ async function main() {
   try {
 
 
-
-
-
-
-
-
-
     console.log('\n--- 3. Ejecución de Transferencia con Privacidad y Hash Propietario ---');
     const testnetNetworkId = 7357437;
 
