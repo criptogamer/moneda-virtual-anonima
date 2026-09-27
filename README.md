@@ -179,9 +179,64 @@ main();
 
 
 
+<h2>Obtener balance</h2>
 
 
 ```nodejs
+
+
+
+
+
+const yengcoin = require('./index.js');
+
+
+
+
+async function get_balance() {
+
+try {
+
+const addressPrivate = "";
+
+
+const privateKey = "";
+
+
+
+
+
+
+
+
+const balance = await yengcoin.getBalance(addressPrivate, privateKey);
+
+
+console.log(balance);
+
+
+
+
+
+process.exit(0);
+} catch (err) {
+
+console.log(err);
+
+process.exit(1);
+
+
+
+}
+
+
+
+
+
+
+
+}
+get_balance();
 
 
 
