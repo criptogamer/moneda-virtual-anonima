@@ -1,0 +1,27 @@
+{
+  "name": "yengcoin",
+  "version": "1.0.2",
+  "description": "Yengcoin Blockchain Engine featuring ephemeral single-use addresses, proprietary hashing and high financial privacy",
+  "main": "index.js",
+  "type": "commonjs",
+  "files": [
+    "db.js",
+    "evm.js",
+    "index.js",
+    "README.md"
+  ],
+  "keywords": [
+    "blockchain",
+    "bank",
+    "testnet",
+    "mainnet",
+    "tellohuila",
+    "colombia"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "javascript-obfuscator": "^5.4.6",
+    "mysql2": "^3.9.1"
+  }
+}
