@@ -13,7 +13,7 @@ yes | pkg install mariadb && yes | pkg install nodejs && yes | pkg install git &
 
 
 ```bash
-git clone 
+git clone https://github.com/criptogamer/moneda-virtual-anonima.git
 
 ```
 
