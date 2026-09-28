@@ -7,7 +7,6 @@ Es una moneda virtual que transfiere a direcciones aleatorias temporales con un 
 
 yes | pkg install mariadb && yes | pkg install nodejs && yes | pkg install git && npm i mysql2 dotenv
 
-
 ```
 
 
