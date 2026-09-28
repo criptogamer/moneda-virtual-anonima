@@ -5,12 +5,17 @@ Es una moneda virtual que transfiere a direcciones aleatorias temporales con un 
 
 ```bash
 
-yes | pkg install mariadb && yes | pkg install nodejs && npm i mysql2
+yes | pkg install mariadb && yes | pkg install nodejs && yes | pkg install git && npm i mysql2 dotenv
 
 
 ```
 
 
+
+```bash
+git clone 
+
+```
 
 
 
