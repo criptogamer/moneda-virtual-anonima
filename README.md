@@ -18,6 +18,12 @@ git clone https://github.com/criptogamer/moneda-virtual-anonima.git
 ```
 
 
+```bash
+cd moneda-virtual-anonima
+```
+
+
+
 
 
 <h2>Crear cuentas</h2>
@@ -69,7 +75,9 @@ main();
 ```
 
 
-
+```bash
+nano create_accounts.js && node create_accounts.js
+```
 
 
 
