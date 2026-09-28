@@ -298,7 +298,7 @@ node get_balance.js
 
 
 
-<h2>Obtener información de transacción por direccion temporal</h2>
+<h2>Obtener detalles de transacción por direccion temporal</h2>
 
 
 
@@ -343,14 +343,13 @@ nano address_temp_details_transaction.js
 
 node address_temp_details_transaction.js
 
-
 ```
 
 
 
 
 
-<h2>Obtener información por hash</h2>
+<h2>Obtener detalles por hash</h2>
 
 
 ```nodejs
@@ -422,7 +421,7 @@ node details_transaction_hash.js
 
 
 
-<h2>Obtener información por bloque</h2>
+<h2>Obtener detalles por bloque</h2>
 
 
 
