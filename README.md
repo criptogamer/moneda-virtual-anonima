@@ -76,9 +76,12 @@ main();
 
 
 ```bash
-nano create_accounts.js && node create_accounts.js
+nano create_accounts.js
 ```
 
+```bash
+node create_accounts.js
+```
 
 
 <h2>Crear dirección temporal</h2>
@@ -144,7 +147,7 @@ main();
 
 
 
-<h2>Transferencias</h2>
+<h2>Transacciones</h2>
 
 ```nodejs
 
@@ -198,8 +201,14 @@ main();
 ```
 
 
+```bash
+nano transaction.js
+```
 
+```bash
+node transaction.js
 
+```
 
 
 <h2>Obtener balance</h2>
@@ -266,8 +275,16 @@ get_balance();
 ```
 
 
+```bash
+nano get_balamce.js
 
+```
 
+```bash
+
+node get_balance.jsa
+
+```
 
 
 
@@ -305,7 +322,19 @@ ejecutarBusqueda();
 ```
 
 
+```bash
 
+nano address_temp_details_transaction.js
+
+```
+
+
+```bash
+
+node address_temp_details_transaction.js
+
+
+```
 
 
 
@@ -367,8 +396,18 @@ process.exit(1);
 
 
 
+```bash
+
+nano details_transaction_hash.js
+
+```
 
 
+```bash
+
+node details_transaction_hash.js
+
+```
 
 
 
@@ -424,6 +463,23 @@ console.log(err);
 
 
 }
+
+
+```
+
+
+
+```bash
+
+nano get_inf_block.js
+
+```
+
+
+
+```bash
+
+node get_inf_block.js
 
 
 ```
