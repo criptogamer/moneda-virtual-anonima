@@ -145,6 +145,17 @@ main();
 
 
 
+```bash
+nano create_temp_address.js
+
+```
+
+
+```bash
+node create_temp_address.js
+
+```
+
 
 
 <h2>Transacciones</h2>
@@ -276,13 +287,13 @@ get_balance();
 
 
 ```bash
-nano get_balamce.js
+nano get_balance.js
 
 ```
 
 ```bash
 
-node get_balance.jsa
+node get_balance.js
 
 ```
 
