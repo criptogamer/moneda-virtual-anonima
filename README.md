@@ -30,7 +30,7 @@ cd moneda-virtual-anonima
 
 ```nodejs
 
-const yengcoin = require('./index.js');
+const network = require('./index.js');
 
 async function main() {
 
@@ -39,8 +39,8 @@ async function main() {
 
 
    console.log('--- 1. Creación de cuentas privadas ---');
-    const sender = await yengcoin.createAccount();
-    const recipient = await yengcoin.createAccount();
+    const sender = await network.createAccount();
+    const recipient = await network.createAccount();
 
     console.log('Cuenta del Emisor:', sender);
     console.log('Cuenta del Receptor:', recipient);
@@ -92,7 +92,7 @@ node create_accounts.js
 
 
 
-const yengcoin = require('./index.js');
+const network = require('./index.js');
 
 async function main() {
   try {
@@ -112,7 +112,7 @@ const privateAddress = "";
 const privateKey = "";
 
     console.log('\n--- 2. Generación de dirección pública de un solo uso (Válida por 3 minutos) ---');
-    const tempPaymentAddress = await yengcoin.generateTemporaryPublicAddress(
+    const tempPaymentAddress = await network.generateTemporaryPublicAddress(
       privateAddress,
       privateKey
     );
@@ -161,7 +161,7 @@ node create_temp_address.js
 
 ```nodejs
 
-const yengcoin = require('./index.js');
+const network = require('./index.js');
 
 async function main() {
   try {
@@ -178,7 +178,7 @@ async function main() {
       networkId: testnetNetworkId
     };
 
-    const txResult = await yengcoin.transfer(tx);
+    const txResult = await network.transfer(tx);
     console.log('Resultado de la Transferencia:', txResult);
 
 
@@ -230,7 +230,7 @@ node transaction.js
 
 
 
-const yengcoin = require('./index.js');
+const network = require('./index.js');
 
 
 
@@ -251,7 +251,7 @@ const privateKey = "";
 
 
 
-const balance = await yengcoin.getBalance(addressPrivate, privateKey);
+const balance = await network.getBalance(addressPrivate, privateKey);
 
 
 console.log(balance);
@@ -308,7 +308,7 @@ node get_balance.js
 
 
 
-const yengcoin = require('./index.js');
+const network = require('./index.js');
 
 
 
@@ -317,7 +317,7 @@ async function ejecutarBusqueda() {
         const direccionABuscar = ''; // Reemplaza con una dirección real
         
         // Llamada a la función esperando el resultado
-        const historial = await yengcoin.transactionAddress(direccionABuscar);
+        const historial = await network.transactionAddress(direccionABuscar);
         
         console.log('Historial de transacciones obtenido:', historial);
     } catch (error) {
@@ -360,7 +360,7 @@ node address_temp_details_transaction.js
 
 
 
-const yengcoin = require('./index.js');
+const network = require('./index.js');
 
 async function main() {
   try {
@@ -375,7 +375,7 @@ async function main() {
 
 
       console.log('\n--- 4. Consulta de detalles de la transacción ---');
-      const txDetails = await yengcoin.getTransaction("Hash_id");
+      const txDetails = await network.getTransaction("Hash_id");
       console.log('Información Pública de la Transacción:', txDetails);
 
 
@@ -431,7 +431,7 @@ node details_transaction_hash.js
 
 
 
-const yengcoin = require('./index.js');
+const network = require('./index.js');
 
 async function main() {
   try {
@@ -449,7 +449,7 @@ async function main() {
 
 
       console.log('\n--- 5. Consulta de detalles del bloque ---');
-      const blockDetails = await yengcoin.getBlock(txResult.blockId);
+      const blockDetails = await network.getBlock(txResult.blockId);
       console.log('Información Pública del Bloque:', blockDetails);
 
 
